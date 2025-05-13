@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diego Lobenal</title>
+  <style>
+    :root {
+      --bg-color: #d0d0d0;
+      --dark-color: #111;
+      --text-color: #1a1a1a;
+      --accent-color: #c7c7c7;
+      --monospace: 'Courier New', monospace;
+      --sans: 'Helvetica Neue', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-color);
+      font-family: var(--sans);
+      color: var(--text-color);
+    }
+
+    header {
+      background-color: var(--dark-color);
+      color: var(--accent-color);
+      padding: 2rem;
+      text-align: center;
+      font-family: var(--monospace);
+      font-size: 2.5rem;
+      position: relative;
+    }
+
+    header::after {
+      content: '.';
+      position: absolute;
+      right: 2rem;
+      bottom: 1rem;
+      font-size: 2rem;
+      color: var(--bg-color);
+    }
+
+    nav {
+      background-color: var(--accent-color);
+      text-align: center;
+      padding: 1rem;
+      font-family: var(--monospace);
+    }
+
+    nav a {
+      color: var(--dark-color);
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 900px;
+      margin: auto;
+      font-size: 1.1rem;
+    }
+
+    .codex {
+      font-family: var(--monospace);
+      background-color: var(--dark-color);
+      color: var(--accent-color);
+      padding: 2rem;
+      margin-top: 2rem;
+      border: 1px dashed var(--accent-color);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-family: var(--monospace);
+      background-color: var(--dark-color);
+      color: var(--accent-color);
+      letter-spacing: 0.2em;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border: 2px solid var(--dark-color);
+    }
+  </style>
+</head>
+<body>
+  <header>DiegoLobenal</header>
+
+  <nav>
+    <a href="#sobre">Sobre mí</a>
+    <a href="#codex">Codex</a>
+    <a href="#galeria">Galería</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="sobre">
+    <h2>Artista Especulativo Transversal</h2>
+    <p>Mi práctica entrelaza performance, cuerpo, archivo y tecnologías contemporáneas. Habito la frontera entre lo íntimo, lo colectivo y lo digital, trazando un mapa interplanar de símbolos, afectos y sistemas de poder. Desde la piel hasta la red, propongo un viaje neomedieval hacia la memoria especulativa.</p>
+  </section>
+
+  <section id="codex" class="codex">
+    <h2>Codex Cyberfeudal</h2>
+    <p>Documento vivo lanzado hacia las galaxias para invocar colaboraciones interplanares. Este códice contiene signos, arquetipos y circuitos que traducen mi visión artística en un lenguaje místico-digital. Cada entrada es una invitación a la alianza creativa.</p>
+  </section>
+
+  <section id="galeria">
+    <h2>Galería de Obra</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/400x300?text=Obra+1" alt="Obra 1">
+      <img src="https://via.placeholder.com/400x300?text=Obra+2" alt="Obra 2">
+      <img src="https://via.placeholder.com/400x300?text=Obra+3" alt="Obra 3">
+    </div>
+  </section>
+
+  <footer id="contacto">
+    diegolobenal@gmail.com · +34 630 538 122 · @diego_lobenal
+  </footer>
+</body>
+</html>
